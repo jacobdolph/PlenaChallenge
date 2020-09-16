@@ -10,12 +10,9 @@ function submitButton() {
         a += 1;
       }
     }
-    if (a !== 1) {
-      repeatedLetters += word[i];
-    } else {
-      newWord += word[i];
-    }
+    a !== 1 ? (repeatedLetters += word[i]) : (newWord += word[i]);
   }
+
   let correctWord = newWord.concat(repeatedLetters);
   let headerTwo = document.createElement("h1");
   headerTwo.innerText = correctWord;
