@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Input a word and see what happens!</h1>
+
+    <input type="text" id="word" value="text" onfocus="this.value=''" />
+    <button type="submit" id="word-submit" onclick="submitButton()">
+      Push for magic
+    </button>
+
+    <ul>
+      <li>
+        First I checked the word for duplicate letters against itself by nesting
+        a for loop in a for loop
+      </li>
+      <li>I then separated the duplicates into their own string</li>
+      <li>
+        then I did a concat on the new Word and the duplicate string to bring
+        them together
+      </li>
+    </ul>
+    <h2>Under here should appear the Solution</h2>
+    <hr />
+    <ul id="correctString"></ul>
+    <script src="index.js"></script>
+  </body>
+</html>
